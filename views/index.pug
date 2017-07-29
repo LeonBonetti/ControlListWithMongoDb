@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  #main.content.hero-body.column.is-8.is-offset-2
+    h2.is-offset-3.column Control-list with mongo
+    .columns
+      input#nameGame.input.is-medium.is-6(type='text', name='nameGame', placeholder='digite o nome do jogo')
+      button#sendNewGame.button.is-primary.is-medium.is-2 Insert
+      p#insertAlert
+    .column.is-8.is-offset-1
+      ul#showList
